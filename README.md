@@ -12,6 +12,7 @@ cat .ssh/id_rsa.pub
 Linux Command
 
 Install LAMP web stack
+(&& means will only run if previous bit run succesfully)
 ```
 sudo apt-get update && sudo apt install -y lamp-server^
 ```
