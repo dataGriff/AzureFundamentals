@@ -19,6 +19,15 @@ Open VM Port
 az vm open-port -g namerg -n vmname --port 80
 ```
 
+## Git
+
+You can use a direct local repo in a web app!
+
+how to set your username
+```
+git config --global user.name "griff"
+```
+
 ## Linux Command
 
 Install LAMP web stack
