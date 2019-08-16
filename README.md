@@ -1,6 +1,14 @@
 # AzureFundamentals
 Azure fundamentals exam repo including azure in month of lunches
 
+Azure CLI
+
+Create and view SSH
+```
+ssh-keygen
+cat .ssh/id_rsa.pub
+```
+
 # Key Terms
 
 | Term   |      Description      |  Abbreviation |
