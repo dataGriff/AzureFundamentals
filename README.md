@@ -23,9 +23,10 @@ az vm open-port -g namerg -n vmname --port 80
 
 You can use a direct local repo in a web app!
 
-how to set your username
+how to set your username and email
 ```
 git config --global user.name "griff"
+git config --global user.email "griff@thing.com"
 ```
 
 ## Linux Command
