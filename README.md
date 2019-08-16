@@ -35,5 +35,7 @@ sudo apt-get update && sudo apt install -y lamp-server^
 | Expressroute |  Dedicated connection to Azure from on-prem      |   |
 | Network Security Group | Basicaly firewall rules in Azure | NSG |
 | Network Interface Cards| Connect VM to a subnet | NIC |
-| Advanced Packing tool | How you install packages on Unbuntu | APT
+| Advanced Packing tool | How you install packages on Unbuntu | APT |
+| Deployment Slots | Staged approach to releasing a web app before releasing all to prod, allows for instant slot swaping |  |
+| App Service Environments | Isolated area to run multiple well apps in | ASE |
 
