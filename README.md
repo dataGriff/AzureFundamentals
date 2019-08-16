@@ -1,7 +1,7 @@
 # AzureFundamentals
 Azure fundamentals exam repo including azure in month of lunches
 
-Azure CLI
+## Azure CLI
 
 Create and view SSH
 ```
@@ -9,7 +9,17 @@ ssh-keygen
 cat .ssh/id_rsa.pub
 ```
 
-Linux Command
+Get version
+```
+az --version
+```
+
+Open VM Port
+```
+az vm open-port -g namerg -n vmname --port 80
+```
+
+## Linux Command
 
 Install LAMP web stack
 (&& means will only run if previous bit run succesfully and ^ tells it to install all relevant packages)
