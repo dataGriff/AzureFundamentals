@@ -5,22 +5,21 @@
             <link rel="stylesheet" href="style.css">
             <script src="script.js"></script>
 <script type="text/csv" id="data">
-    Term|Description|Abbreviation|Link
-    Infrastructure as a Service|This is where you utilise hardware or virtual machines provided by cloud but control the operating system etc|IaaS|
-    Platform as a Service|This is where you utilise a platform such as Azure SQL but have no control over the infrastructure|PaaS|
-    Software as a Service|This is where you an application already created and are just responsible for configuring it|SaaS|
-    Azure Resource Locks|This can lock resources, such as precenting deleting them, and takes precedence over role-based access.||
-    Azure Advisor|Azure advisor informs on security, performance, high availability and cost effectiveness of all Azure resources.||
-    Initiative|Collection of Azure policies which can be assigned to multiple scopes.||
-    Azure Policy|Individual rules to apply to resources (e.g. naming conventions, allowed regions) which can be grouped together to create an initative.||
-    Role-Based Acces Control|Granular security permissions for users and groups over Azure resources|RBAC|
+    Infrastructure as a Service|This is where you utilise hardware or virtual machines provided by cloud but control the operating system etc|IaaS||
+    Platform as a Service|This is where you utilise a platform such as Azure SQL but have no control over the infrastructure|PaaS||
+    Software as a Service|This is where you an application already created and are just responsible for configuring it|SaaS||
+    Azure Resource Locks|This can lock resources, such as precenting deleting them, and takes precedence over role-based access.|||
+    Azure Advisor|Azure advisor informs on security, performance, high availability and cost effectiveness of all Azure resources.|||
+    Initiative|Collection of Azure policies which can be assigned to multiple scopes.|||
+    Azure Policy|Individual rules to apply to resources (e.g. naming conventions, allowed regions) which can be grouped together to create an initative.|||
+    Role-Based Acces Control|Granular security permissions for users and groups over Azure resources|RBAC||
 </script>      
     </head>
        <body onload="Upload()">
             <h2>Azure Glossary</h2>   
             <input type="text" id="myInput" onkeyup="search()" placeholder="Search.." title="Search">
             <hr />
-            <div id="dvCSV">
-            </div>
+            <table id="dvCSV">
+            </table>
     </body>
 </html>
