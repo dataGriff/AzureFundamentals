@@ -13,7 +13,7 @@
     Initiative|Collection of Azure policies which can be assigned to multiple scopes.|||
     Azure Policy|Individual rules to apply to resources (e.g. naming conventions, allowed regions) which can be grouped together to create an initative.|||
     Role-Based Acces Control|Granular security permissions for users and groups over Azure resources|RBAC||
-    Availability Zone|Availability Zones are unique physical locations within an Azure region.|||
+    Availability Zone|Availability Zones are unique physical separate data centres within an Azure region. e.g. West Europe, North Europe, Central US, France Central all have three availability zones.|||
     Service Level Agreement|This is the minmum percentage availability a service provides e.g. 99.5%|SLA||VM with premium storage provides 99.9% SLA. 
     Authentication|Ensures username and password correct. Uses certificate to identify a person or service.|||
     Authorisation|Ensures account has permissions to access resource.|||
@@ -42,6 +42,31 @@
     Azure Firewall|Filters virtual Azure subnets and on-prem, Azure VPN and Expressroute.|||
     Web Application Firewall|Protects web apps from common web based attacks.|WAF||
     Network Security Group|Filters between subnets through NSG rules. Granular using subnet and adapter level.|NSG||
+    Geography|Discrete market typically containing two or more regions that preserve data residency and compliance boundaries. e.g. Americas, Europe, Asia Pacific, Middle East and Africa|||
+    Zonal Services|Availability zone service where resource pinned to a zone (VM, managed disk, IP).|||
+    Zone-Redundant Services|Availability zone service where platform replicates across zones (sql database, zone-redundant storage).|||
+    Region Pair|Each region always paired with another at least 300 miles away. e.g. North Europe and West Europe|||
+    Service Credit|If Azure underperforms on its SLA it will give a service credit back. < 99.9 then 10 credits, < 99 then 25 and < 95 then 100|||
+    Resiliency|Ability of a service to return to working order. High availability and disaster recovery are key to this.|||
+    Failure Mode Analysis|Identify points of failure and how service will respond to them.|FMA||
+    Availability|The time that a system is functional and working.|||
+    Express Route|You can only have ten of these per subscription.|||
+    Developer Support Plan|Severity C less than 8 business hours response.|||
+    Standard Support Plan|Severity A less than 1 hours response.|||
+    Professional Direct Support Plan|Severity A less than 1 hours response.|||
+    Premier Support Plan|Severity A less than 1 hours response. Less than 15 with Azure Rapid response.|||
+    Private Preview|Azure feature available to specifc Azure customers for evaluation, typically by invite only.|||
+    Public Preview|Azure feature made available for all Azure customers to evaluate.|||
+    Availability Set|Logical grouping of two or more VMs that help keep your application available during planned or unplanned maintenance.|||
+    Update Domain|Update domains indicate groups of VMs and underlying physical hardware that can be rebooted at the same time.|||
+    VM Scale Set|Azure Virtual Machine Scale Sets let you create and manage a group of identical, load balanced VMs. The number of VM instances can automatically increase or decrease in response to demand or a defined schedule.|||
+    Azure Batch|Azure Batch enables large-scale job scheduling and compute management with the ability to scale to tens, hundreds, or thousands of VMs.|||
+    Azure Container Instances|PaaS offering that allows you to upload your containers and execute them directly.|ACI||
+    Azure Kubernetes Service|Complete orchestration service for containers with distributed architectures with multiple containers.|AKS||
+    Web App|Full support for hosting web apps using ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP, or Python.|||
+    API App|REST-based Web APIs using your choice of language and framework.|||
+    Web Jobs|WebJobs allows you to run a program (.exe, Java, PHP, Python or Node.js) or script (.cmd, .bat, PowerShell, or Bash).|||
+    Mobile App|Use the Mobile Apps feature of Azure App Service to quickly build a back-end for iOS and Android apps.|||
 </script>      
     </head>
        <body onload="Upload()">
