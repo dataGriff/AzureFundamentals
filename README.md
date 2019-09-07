@@ -30,6 +30,11 @@ Open VM Port
 az vm open-port -g namerg -n vmname --port 80
 ```
 
+List VM Sizes in (WestEurope)
+```
+az vm list-sizes --location westeurope --output table
+```
+
 ## Git
 
 You can use a direct local repo in a web app!
