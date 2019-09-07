@@ -31,8 +31,8 @@
     Azure AD Application Proxy|Allows publish of on-prem web apps using basic Azure AD.|||
     Application Insights|Developers send telemerty to Azure.|||
     Azure Resource Health|Displays status of Azure Services.||<a href="https://docs.microsoft.com/en-us/azure/service-health/resource-health-overview">Link</a>|
-    Advanced Threat Protection|Monitor user behaviour , protects actuve directory, provides incident information.|ATP||
-    Azure Information Protection|Labels documents and e-mail to claissfy them for compliance purposes.|AIP||
+    Advanced Threat Protection|Cloud-based security solution that identifies, detects, and helps you investigate advanced threats, compromised identities, and malicious insider actions directed at your organization..|ATP||
+    Azure Information Protection|Labels documents and e-mail to claissify them for compliance purposes.|AIP||
     Azure Security Centre|Protects Azure cloud, non-cloud and hybrid resources. Also integrated with Windows defender.|||
     Key Vault|Securely store encryption keys, SSL/TLS certificates, passwords, API keys...|||
     Secure Sockets Layer||SSL||
@@ -41,7 +41,7 @@
     Service Health|Can be used to notify if app services above quota , respond to planned service outtages, Webhook to display health incidents.||<a href="https://docs.microsoft.com/en-us/azure/service-health/service-health-overview>Link</a>|
     Azure Firewall|Filters virtual Azure subnets and on-prem, Azure VPN and Expressroute.|||
     Web Application Firewall|Protects web apps from common web based attacks.|WAF||
-    Network Security Group|Filters between subnets through NSG rules. Granular using subnet and adapter level.|NSG||
+    Network Security Group|A network security group, or NSG, allows or denies inbound network traffic to your Azure resources. Think of a network security group as a cloud-level firewall for your network.|NSG||
     Geography|Discrete market typically containing two or more regions that preserve data residency and compliance boundaries. e.g. Americas, Europe, Asia Pacific, Middle East and Africa|||
     Zonal Services|Availability zone service where resource pinned to a zone (VM, managed disk, IP).|||
     Zone-Redundant Services|Availability zone service where platform replicates across zones (sql database, zone-redundant storage).|||
@@ -50,7 +50,7 @@
     Resiliency|Ability of a service to return to working order. High availability and disaster recovery are key to this.|||
     Failure Mode Analysis|Identify points of failure and how service will respond to them.|FMA||
     Availability|The time that a system is functional and working.|||
-    Express Route|You can only have ten of these per subscription.|||
+    Express Route|ExpressRoute lets you extend your on-premises networks into the Microsoft cloud over a private connection facilitated by a connectivity provider. You can only have ten of these per subscription.|||
     Developer Support Plan|Severity C less than 8 business hours response.|||
     Standard Support Plan|Severity A less than 1 hours response.|||
     Professional Direct Support Plan|Severity A less than 1 hours response.|||
@@ -67,7 +67,53 @@
     API App|REST-based Web APIs using your choice of language and framework.|||
     Web Jobs|WebJobs allows you to run a program (.exe, Java, PHP, Python or Node.js) or script (.cmd, .bat, PowerShell, or Bash).|||
     Mobile App|Use the Mobile Apps feature of Azure App Service to quickly build a back-end for iOS and Android apps.|||
-</script>      
+    Azure SQL Database|Azure SQL Database is a relational database as a service (DaaS) based on the latest stable version of the Microsoft SQL Server database engine. |||
+    Azure Cosmos DB|Azure Cosmos DB is a globally distributed database service. It supports schema-less data that lets you build highly responsive and Always On applications to support constantly changing data.|||
+    Azure Blob storage|Azure Blob Storage is unstructured, meaning that there are no restrictions on the kinds of data it can hold e.g. Videos, images|||
+    Azure Data Lake Storage|The Data Lake feature allows you to perform analytics on your data usage and prepare reports. Data Lake is a large repository that stores both structured and unstructured data.|||    
+    Azure Files|Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol.|||  
+    Azure Queue|Azure Queue storage is a service for storing large numbers of messages that can be accessed from anywhere in the world.|||  
+    Disk Storage|Disk storage provides disks for virtual machines, applications, and other services to access and use as they need, similar to how they would in on-premises scenarios. |||  
+    Hot storage tier|Optimized for storing data that is accessed frequently. |||   
+    Cool storage tier|Optimized for data that are infrequently accessed and stored for at least 30 days. |||  
+    Archive storage tier|For data that are rarely accessed and stored for at least 180 days with flexible latency requirements. ||| 
+    Azure Storage Service Encryption|It encrypts the data before storing it and decrypts the data before retrieving it. The encryption and decryption are transparent to the user. |SSE|| 
+    Client-side encryption|Data is already encrypted by the client libraries. Azure stores the data in the encrypted state at rest, which is then decrypted during retrieval. ||| 
+    Locallly Redundant Storage| LRS provides this object durability by replicating your data to a storage scale unit. A datacenter, located in the region where you created your storage account, hosts the storage scale unit. |LRS|| 
+    Zone Redundant Storage|Zone-redundant storage (ZRS) replicates your data synchronously across three storage clusters in a single region.  |ZRS|| 
+    Geo Redundant Storage|Replicates your data to a secondary region that is hundreds of miles away from the primary region. |GRS|| 
+    Read-Access Geo-Redundant Storage| |RA-GRS|| 
+    Geo-Zone-Redundant Storage| |GZRS|| 
+    Read-AccessGeo-Zone-Redundant Storage| |RA-GZRS|| 
+    N-Tier Architecture|Divides an application into two or more logical tiers. Architecturally, a higher tier can access services from a lower tier, but a lower tier should never access a higher tier. ||| 
+    Virtual Network|A virtual network is a logically isolated network on Azure.||| 
+    Subnet|Virtual networks can be segmented into one or more subnets. Subnets help you organize and secure your resources in discrete sections.||| 
+    Resiliency|Resiliency refers to a system's ability to stay operational during abnormal conditions.||| 
+    Load Balancer|A load balancer distributes traffic evenly among each system in a pool. The load balancer receives the user's request and directs the request to one of the VMs in the web tier.  Load balancer routing based on best available VM.||| 
+    Azure Load Balancer|Azure Load Balancer is a load balancer service that Microsoft provides that helps take care of the maintenance for you. Load Balancer supports inbound and outbound scenarios, provides low latency and high throughput, and scales up to millions of flows for all Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) applications. ||| 
+    Transmission Control Protocol | |TCP|| 
+    User Datagram Protocol  | |UDP|| 
+   Azure Application Gateway  |Application Gateway is a load balancer designed for web applications (HTTP) that included a Web Application Firewall (WAF). It uses Azure Load Balancer at the transport level (TCP) and applies sophisticated URL-based routing rules to support several advanced scenarios.||| 
+   Azure Application Firewall  ||WAF|| 
+   Content Delivery Network |A content delivery network (CDN) is a distributed network of servers that can efficiently deliver web content to users. It is a way to get content to users in their local region to minimize latency.|CDN|| 
+   Domain Name System||DNS|| 
+   Azure Traffic Manager|Traffic Manager uses the DNS server that's closest to the user to direct user traffic to a globally distributed endpoint. Traffic manager routing based on best available endpoint.||| 
+   Authentication|Establishing the identity of a person or service looking to access a resource.|AuthN|| 
+   Authorization |Establishing what level of access an authenticated person or service has.|AuthZ|| 
+   Single-Sign-On |SSO enables users to remember only one ID and one password to access multiple applications.|SSO||       
+   Multi-factor authentication |Something you know, Something you possess, Something you are.|MFA||  
+   Symmetric encryption|Uses the same key to encrypt and decrypt the data. Consider a desktop password manager application.||| 
+   Azure Storage Service Encryption |Automatically encrypts your data before persisting it to Azure Managed Disks, Azure Blob storage, Azure Files, or Azure Queue storage, and decrypts the data before retrieval.||| 
+   Azure Disk Encryption |Azure Disk Encryption leverages the industry-standard BitLocker feature of Windows and the dm-crypt feature of Linux to provide volume encryption for the OS and data disks.||| 
+   Transparent data encryption |t performs real-time encryption and decryption of the database, associated backups, and transaction log files at rest without requiring changes to the application.|TDE|| 
+   Azure Firewall |Managed, cloud-based, network security service that protects your Azure Virtual Network resources at the internet facing level. ||| 
+   Distributed Denial of Service Attack | |DDoS|| 
+   Azure DDoS protection |The Azure DDoS Protection service protects your Azure applications by monitoring traffic at the Azure network edge before it can impact your service's availability. Comes in basic and standard. ||| 
+   DDoS Volumetric Attack|The attackers goal is to flood the network layer with a substantial amount of seemingly legitimate traffic.||| 
+   DDoS Protocol  Attack|These attacks render a target inaccessible, by exploiting a weakness in the layer 3 and layer 4 protocol stack.||| 
+   DDoS Resource  Attack|These attacks target web application packets to disrupt the transmission of data between hosts.||| 
+   Virtual private network|VPN connections are a common way of establishing secure communication channels between networks. Connection between Azure Virtual Network and an on-premises VPN device is a great way to provide secure communication between your network and your VNet on Azure.|VPN|| 
+                </script>      
     </head>
        <body onload="Upload()">
             <h2>Azure Glossary</h2>   
