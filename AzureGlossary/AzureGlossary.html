@@ -31,17 +31,18 @@
     Azure AD Application Proxy|Allows publish of on-prem web apps using basic Azure AD.|||
     Application Insights|Developers send telemerty to Azure.|||
     Azure Resource Health|Displays status of Azure Services.||<a href="https://docs.microsoft.com/en-us/azure/service-health/resource-health-overview">Link</a>|
-    Advanced Threat Protection|Cloud-based security solution that identifies, detects, and helps you investigate advanced threats, compromised identities, and malicious insider actions directed at your organization..|ATP||
-    Azure Information Protection|Labels documents and e-mail to claissify them for compliance purposes.|AIP||
+    Advanced Threat Protection|Cloud-based security solution that identifies, detects, and helps you investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.|ATP|<a href="https://portal.atp.azure.com/">Link</a>|
+    Azure Information Protection|Labels documents and e-mail to claissify them for compliance purposes.  Allows identification
+    of those that should be encrypted. |AIP||
     Azure Security Centre|Protects Azure cloud, non-cloud and hybrid resources. Also integrated with Windows defender.|||
     Key Vault|Securely store encryption keys, SSL/TLS certificates, passwords, API keys...|||
     Secure Sockets Layer||SSL||
     Transport Layer Security||TLS||
     Knowledge Centre|FAQ around Azure cloud to search for online documentation.|||
-    Service Health|Can be used to notify if app services above quota , respond to planned service outtages, Webhook to display health incidents.||<a href="https://docs.microsoft.com/en-us/azure/service-health/service-health-overview>Link</a>|
-    Azure Firewall|Filters virtual Azure subnets and on-prem, Azure VPN and Expressroute.|||
+    Service Health|Can be used to notify if app services above quota , respond to planned service outtages, Webhook to display health incidents,planned maintenance and deprecated offerings.||<a href="https://docs.microsoft.com/en-us/azure/service-health/service-health-overview>Link</a>|
+    Azure Firewall|Filters virtual Azure subnets and on-prem, Azure VPN and Expressroute. Use to block/allow traffic across subscriptions.|||
     Web Application Firewall|Protects web apps from common web based attacks.|WAF||
-    Network Security Group|A network security group, or NSG, allows or denies inbound network traffic to your Azure resources. Think of a network security group as a cloud-level firewall for your network.|NSG||
+    Network Security Group|A network security group, or NSG, allows or denies inbound network traffic to your Azure resources. Think of a network security group as a cloud-level firewall for your network. This is within a single subscription.|NSG||
     Geography|Discrete market typically containing two or more regions that preserve data residency and compliance boundaries. e.g. Americas, Europe, Asia Pacific, Middle East and Africa|||
     Zonal Services|Availability zone service where resource pinned to a zone (VM, managed disk, IP).|||
     Zone-Redundant Services|Availability zone service where platform replicates across zones (sql database, zone-redundant storage).|||
@@ -93,28 +94,47 @@
     Azure Load Balancer|Azure Load Balancer is a load balancer service that Microsoft provides that helps take care of the maintenance for you. Load Balancer supports inbound and outbound scenarios, provides low latency and high throughput, and scales up to millions of flows for all Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) applications. ||| 
     Transmission Control Protocol | |TCP|| 
     User Datagram Protocol  | |UDP|| 
-   Azure Application Gateway  |Application Gateway is a load balancer designed for web applications (HTTP) that included a Web Application Firewall (WAF). It uses Azure Load Balancer at the transport level (TCP) and applies sophisticated URL-based routing rules to support several advanced scenarios.||| 
-   Azure Application Firewall  ||WAF|| 
-   Content Delivery Network |A content delivery network (CDN) is a distributed network of servers that can efficiently deliver web content to users. It is a way to get content to users in their local region to minimize latency.|CDN|| 
-   Domain Name System||DNS|| 
-   Azure Traffic Manager|Traffic Manager uses the DNS server that's closest to the user to direct user traffic to a globally distributed endpoint. Traffic manager routing based on best available endpoint.||| 
-   Authentication|Establishing the identity of a person or service looking to access a resource.|AuthN|| 
-   Authorization |Establishing what level of access an authenticated person or service has.|AuthZ|| 
-   Single-Sign-On |SSO enables users to remember only one ID and one password to access multiple applications.|SSO||       
-   Multi-factor authentication |Something you know, Something you possess, Something you are.|MFA||  
-   Symmetric encryption|Uses the same key to encrypt and decrypt the data. Consider a desktop password manager application.||| 
-   Azure Storage Service Encryption |Automatically encrypts your data before persisting it to Azure Managed Disks, Azure Blob storage, Azure Files, or Azure Queue storage, and decrypts the data before retrieval.||| 
-   Azure Disk Encryption |Azure Disk Encryption leverages the industry-standard BitLocker feature of Windows and the dm-crypt feature of Linux to provide volume encryption for the OS and data disks.||| 
-   Transparent data encryption |t performs real-time encryption and decryption of the database, associated backups, and transaction log files at rest without requiring changes to the application.|TDE|| 
-   Azure Firewall |Managed, cloud-based, network security service that protects your Azure Virtual Network resources at the internet facing level. ||| 
-   Distributed Denial of Service Attack | |DDoS|| 
-   Azure DDoS protection |The Azure DDoS Protection service protects your Azure applications by monitoring traffic at the Azure network edge before it can impact your service's availability. Comes in basic and standard. ||| 
-   DDoS Volumetric Attack|The attackers goal is to flood the network layer with a substantial amount of seemingly legitimate traffic.||| 
-   DDoS Protocol  Attack|These attacks render a target inaccessible, by exploiting a weakness in the layer 3 and layer 4 protocol stack.||| 
-   DDoS Resource  Attack|These attacks target web application packets to disrupt the transmission of data between hosts.||| 
-   Virtual private network|VPN connections are a common way of establishing secure communication channels between networks. Connection between Azure Virtual Network and an on-premises VPN device is a great way to provide secure communication between your network and your VNet on Azure.|VPN|| 
-   Network interface card|Connect a VM to a subnet.|NIC|| 
-                </script>      
+    Azure Application Gateway  |Application Gateway is a load balancer designed for web applications (HTTP) that included a Web Application Firewall (WAF). It uses Azure Load Balancer at the transport level (TCP) and applies sophisticated URL-based routing rules to support several advanced scenarios.||| 
+    Web Application Firewall  |A web application firewall (WAF) is an application firewall for HTTP applications. protect web apps from common attacks.|WAF|| 
+    Content Delivery Network |A content delivery network (CDN) is a distributed network of servers that can efficiently deliver web content to users. It is a way to get content to users in their local region to minimize latency.|CDN|| 
+    Domain Name System||DNS|| 
+    Azure Traffic Manager|Traffic Manager uses the DNS server that's closest to the user to direct user traffic to a globally distributed endpoint. Traffic manager routing based on best available endpoint.||| 
+    Authentication|Establishing the identity of a person or service looking to access a resource.|AuthN|| 
+    Authorization |Establishing what level of access an authenticated person or service has.|AuthZ|| 
+    Single-Sign-On |SSO enables users to remember only one ID and one password to access multiple applications.|SSO||       
+    Multi-factor authentication |Authentication via something you know, something you possess, something you are. Password, SMS, authenticator app and voice call are all supported. |MFA||  
+    Symmetric encryption|Uses the same key to encrypt and decrypt the data. Consider a desktop password manager application.||| 
+    Azure Storage Service Encryption |Automatically encrypts your data before persisting it to Azure Managed Disks, Azure Blob storage, Azure Files, or Azure Queue storage, and decrypts the data before retrieval.||| 
+    Azure Disk Encryption |Azure Disk Encryption leverages the industry-standard BitLocker feature of Windows and the dm-crypt feature of Linux to provide volume encryption for the OS and data disks.||| 
+    Transparent data encryption |t performs real-time encryption and decryption of the database, associated backups, and transaction log files at rest without requiring changes to the application.|TDE|| 
+    Azure Firewall |Managed, cloud-based, network security service that protects your Azure Virtual Network resources at the internet facing level. ||| 
+    Distributed Denial of Service Attack | |DDoS|| 
+    Azure DDoS protection |The Azure DDoS Protection service protects your Azure applications by monitoring traffic at the Azure network edge before it can impact your service's availability. Comes in basic and standard. ||| 
+    DDoS Volumetric Attack|The attackers goal is to flood the network layer with a substantial amount of seemingly legitimate traffic.||| 
+    DDoS Protocol  Attack|These attacks render a target inaccessible, by exploiting a weakness in the layer 3 and layer 4 protocol stack.||| 
+    DDoS Resource  Attack|These attacks target web application packets to disrupt the transmission of data between hosts.||| 
+    Virtual private network|VPN connections are a common way of establishing secure communication channels between networks. Connection between Azure Virtual Network and an on-premises VPN device is a great way to provide secure communication between your network and your VNet on Azure.|VPN|| 
+    Network interface card|Connect a VM to a subnet.|NIC|| 
+    Machine Learning Studio|Machine learning studio is a drag and drop workspace for deploying predictive analytics on your data. They are deployed as web services 
+    and only managed in machine learning studio. ||<a href="https://azure.microsoft.com/en-gb/services/machine-learning-studio/">Link</a>| 
+    Machine Learning Service|Uses notebooks style machine learning with python you can write in browser or in code. ||<a href="https://azure.microsoft.com/en-gb/services/machine-learning-service/">Link</a>| 
+    Self service password reset|Self service password reset. Password, SMS, authenticator app and voice call are all supported along with security questions and e-mail.|SSPR|| 
+    Billing Zone|Geographical grouping of azure regions used to determine billing based on data transfer.|||   
+    Azure MFA Server|Azure MFA server only required for authentication when supporting users located on on-prem AD.|||   
+    Pass the ticket attack|Suspected identity theft alerts for kerberos theft of one user to gain access to another.||| 
+    Pass the hash attack|Suspected identity theft alerts for NTLM theft of one use to gain access to another.|||   
+    Brute force attack|Someone trying multiple attempts to guess password.||| 
+    Honeytoken attack| create an account that is never used for a decoy.|||
+    SAMMR - user and group membership reconassaince|Attackers query domain to map directory structure of privileged users.|||
+    Account enumeration reconassaince|Attacker user names along with tool to guess users.|||
+    Private cloud|Single-tennant.|||
+    Public cloud|Multi-tennant.|||
+    Hybrid cloud|Always has some form of public cloud. e.g. on-prem and public cloud or private cloud and public cloud. |||
+    On prem active directory federation server|. |ADFS||
+    File Storage|Can be used for IaaS VMs as well as on-prem, acceses through SMB (server message block) protocol, REST and native client libararies. |||
+    Disk Storage|Only available to VM to which it is attached. 	No outside access. |||
+    Blob  Storage|For large unstructured data. Stored and access as block blobs in an application. |||
+</script>      
     </head>
        <body onload="Upload()">
             <h2>Azure Glossary</h2>   
@@ -125,13 +145,3 @@
     </body>
 </html>
 
-                </script>      
-    </head>
-       <body onload="Upload()">
-            <h2>Azure Glossary</h2>   
-            <input type="text" id="myInput" onkeyup="search()" placeholder="Search.." title="Search">
-            <hr />
-            <table id="dvCSV">
-            </table>
-    </body>
-</html>
