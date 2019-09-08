@@ -35,6 +35,11 @@ List VM Sizes in (WestEurope)
 az vm list-sizes --location westeurope --output table
 ```
 
+create Resource Group
+```
+az group create --name azuremolchapter4 --location westeurope
+```
+
 ## Git
 
 You can use a direct local repo in a web app!
