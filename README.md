@@ -40,6 +40,11 @@ create Resource Group
 az group create --name azuremolchapter4 --location westeurope
 ```
 
+get quotas of resources
+```
+az vm list-usage --location  westeurope
+```
+
 ## Git
 
 You can use a direct local repo in a web app!
